@@ -10,7 +10,7 @@ public class GuessingGameTask
         int secretno = random.nextInt(max_range);
         int attempts = 0;
         boolean guessed = false;
-        int[] array = new int[7];
+        int[] array = new int[6];
         int myguess=0;
 
         System.out.println("Welcome to the guessing Game..!");
