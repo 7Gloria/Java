@@ -15,12 +15,12 @@ public class Task2
 	               System.out.println("File already exists.");
 	           }
 
-	      FileWriter fw = new FileWriter("Gloria.html");
+	      FileWriter fw = new FileWriter("Gloria.html,true");
 	      fw.write("Hello...");
 	          
 	      System.out.println("Successfully wrote to the file");
-	      StringBuilder link = new StringBuilder();
-	      link.append("<a href=\"https://github.com/7Gloria/Java/blob/master/src/GuessingGameTask.java\">Click here for the GuessingGame source code</a>");
+	      
+	      fw.append("<a href=\"https://github.com/7Gloria/Java/blob/master/src/GuessingGameTask.java\">Click here for the GuessingGame source code</a>");
 
 	      fw.write(link.toString());
 	      fw.close();
